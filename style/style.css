@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --primary-color: #3d66cb;
+  --tertiary-color: #fff;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.tc-btn {
+  text-align: center;
+}
+
+.tc-btn button {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+}
+
+.modal-dialog .modal-content {
+  max-width: 1440px;
+  width: 200%;
+  height: 100%;
+  padding: 60px 30px;
+}
+.modal-dialog .modal-content .modal-header {
+  align-self: center;
+}
+
+.modal-dialog .modal-content .modal-header h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.modal-dialog .modal-content .modal-body {
+  padding: 20px 50px;
+}
+
+.modal-dialog .modal-content .modal-body .condition {
+  padding: 25px 20px;
+}
+
+.modal-dialog .modal-content .modal-body .condition h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.modal-dialog .modal-content .modal-body .condition p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.modal-dialog .modal-content .modal-footer {
+  align-self: center;
+}
+
+.modal-dialog .modal-content .modal-footer button {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  width: 303px;
+  height: 52px;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.modal .modal-content2 {
+  background-color: var(--tertiary-color);
+  max-width: 1440px;
+  width: 75%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.modal .modal-content2 .thankyou_modal {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+
+.modal .modal-content2 .thankyou_modal img {
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.modal .modal-content2 .thankyou_modal h3 {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.modal .modal-content2 .thankyou_modal h4 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.modal .modal-content2 .thankyou_modal h5 {
+  color: red;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.modal .modal-content2 .thankyou_modal p {
+  font-weight: 300px;
+  font-size: 12px;
+  margin: 4px;
+}
+
+.modal .modal-content2 .thankyou_modal button {
+  width: 75%;
+  height: 52px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+/*Tablet View*/
+
+@media only screen and (max-width: 990px) {
+  .modal-dialog .modal-content {
+    width: 130%;
+    height: 100%;
+    padding: 30px 15px;
+  }
+}
+
+/*Mobile View*/
+
+@media only screen and (max-width: 600px) {
+  .modal-dialog .modal-content {
+    width: 100%;
+    height: 100%;
+    padding: 30px 15px;
+  }
+
+  br {
+    display: none;
+  }
+}
