@@ -4,6 +4,7 @@
 :root {
   --primary-color: #3d66cb;
   --tertiary-color: #fff;
+  --third-color: #000;
 }
 
 body,
@@ -19,6 +20,21 @@ html {
 .tc-btn button {
   background-color: var(--primary-color);
   color: var(--tertiary-color);
+}
+
+.tc-btn button:hover {
+  background-color: var(--third-color);
+  color: var(--tertiary-color);
+}
+
+.modal .modal-dialog .modal-content .close {
+  align-self: end;
+  margin-top: -50px;
+  width: 3%;
+  height: 6%;
+  border: 2px black solid;
+  border-radius: 50%;
+  box-sizing: border-box;
 }
 
 .modal-dialog .modal-content {
@@ -74,67 +90,18 @@ html {
   font-weight: 700;
 }
 
-.modal .modal-content2 {
-  background-color: var(--tertiary-color);
-  max-width: 1440px;
-  width: 75%;
-  height: 100%;
-  margin: 0 auto;
-}
-
-.modal .modal-content2 .thankyou_modal {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  padding: 20px;
-}
-
-.modal .modal-content2 .thankyou_modal img {
-  background-color: var(--primary-color);
-  border-radius: 50%;
-  padding: 15px;
-}
-
-.modal .modal-content2 .thankyou_modal h1 {
-  font-size: 35px;
-  font-weight: 400;
-}
-
-.modal .modal-content2 .thankyou_modal h4 {
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.modal .modal-content2 .thankyou_modal h5 {
-  color: red;
-  font-weight: 400;
-  font-size: 14px;
-}
-
-.modal .modal-content2 .thankyou_modal p {
-  font-weight: 300px;
-  font-size: 12px;
-  margin: 4px;
-}
-
-.modal .modal-content2 .thankyou_modal button {
-  width: 75%;
-  height: 52px;
-  border: none;
-  background-color: var(--primary-color);
+.modal-dialog .modal-content .modal-footer button:hover {
+  background-color: var(--third-color);
   color: var(--tertiary-color);
-  border-radius: 10px;
-  font-size: 16px;
-  font-weight: 600;
-  margin-top: 50px;
 }
 
 /*Tablet View*/
 
 @media only screen and (max-width: 990px) {
+  .modal {
+    padding: 50px;
+  }
+
   .modal-dialog .modal-content {
     width: 130%;
     height: 100%;
@@ -145,22 +112,31 @@ html {
     font-size: 35px;
   }
 
-  .modal-dialog .modal-content {
-    padding: 50px;
-  }
-
   .modal .modal-content2 .thankyou_modal h1 {
     font-size: 35px;
+  }
+
+  .modal .modal-dialog .modal-content .close {
+    margin-top: -20px;
+    width: 6%;
+    height: 5%;
   }
 }
 
 /*Mobile View*/
 
 @media only screen and (max-width: 600px) {
+  .modal {
+    padding: 10px;
+  }
   .modal-dialog .modal-content {
     width: 100%;
     height: 100%;
-    padding: 30px 15px;
+    padding: 15px 7px;
+  }
+
+  .modal-dialog .modal-content .modal-body {
+    padding: 0;
   }
 
   .modal-dialog .modal-content .modal-header h1 {
@@ -174,5 +150,11 @@ html {
 
   .thankyou_modal p br {
     display: none;
+  }
+
+  .modal .modal-dialog .modal-content .close {
+    margin-top: -40px;
+    width: 8%;
+    height: 5%;
   }
 }
