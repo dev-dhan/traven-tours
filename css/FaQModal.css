@@ -118,31 +118,52 @@
 
 
 
+/* Adjusting modal width */
+.modal-section .modal-dialog.modal-xl {
+    max-width: 100%;
+    max-height: 100%;
+    /* Adjust the maximum width as needed */
+}
+
+
+
+
+
 
 
 /* Large Screen */
 @media (min-width: 992px) {
+
     .modal-content {
         width: 853px;
     }
 
     .faq-button {
-        font: 5px;
+        font-size: 16px;
     }
 }
 
-@media (max-width: 991px) {
-
+/* Medium Screen */
+@media (min-width: 768px) and (max-width: 991px) {
     .faq-button {
-        font-size: 12px;
+        font-size: 16px;
+    }
+
+    .modal-section {
+        padding: 50px;
+        max-width: 100%;
+        max-height: 100vh;
     }
 
     .modal-content {
         border-radius: 18px;
         padding: 50px 10px;
         gap: 10px;
-        height: 926px;
+        margin-top: -26px;
+        max-height: 100%;
+        height: auto;
     }
+
 
     .faq-button img {
         width: 30px;
@@ -150,21 +171,45 @@
     }
 
     .faq-header>h1 {
-        font-size: 30px;
-        font: bold;
+        font-size: 35px;
+        font-weight: bold;
     }
 
     .faq-header>p {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
-@media (max-width: 768px) {
+/* Small Screen */
+@media (max-width: 767px) {
     .modal-content {
         border-radius: 18px;
         padding: 50px 10px;
         gap: 10px;
         height: 100%;
         max-height: 90vh;
+    }
+
+    .modal-section {
+        padding: 50px 15px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .faq-button img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .faq-button {
+        font-size: 14px;
+    }
+
+    .faq-header>h1 {
+        font-size: 30px;
+    }
+
+    .faq-header>p {
+        font-size: 14px;
     }
 }
