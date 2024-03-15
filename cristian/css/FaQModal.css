@@ -116,6 +116,28 @@
     text-align: justify;
 }
 
+.modal-button {
+    background-color: #3D66CB;
+    color: white;
+    max-width: 303px;
+    width: 100%;
+    height: 52px;
+    border-radius: 10px;
+    border: none;
+    font: bold 16px "Inter";
+}
+
+.modal-button:hover {
+    opacity: 70%;
+
+}
+
+.modal-button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 
 
 /* Adjusting modal width */
