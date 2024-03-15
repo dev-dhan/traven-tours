@@ -98,7 +98,7 @@ html {
   padding: 15px;
 }
 
-.modal .modal-content2 .thankyou_modal h3 {
+.modal .modal-content2 .thankyou_modal h1 {
   font-size: 35px;
   font-weight: 400;
 }
@@ -140,6 +140,18 @@ html {
     height: 100%;
     padding: 30px 15px;
   }
+
+  .modal-dialog .modal-content .modal-header h1 {
+    font-size: 35px;
+  }
+
+  .modal-dialog .modal-content {
+    padding: 50px;
+  }
+
+  .modal .modal-content2 .thankyou_modal h1 {
+    font-size: 35px;
+  }
 }
 
 /*Mobile View*/
@@ -151,7 +163,16 @@ html {
     padding: 30px 15px;
   }
 
-  br {
+  .modal-dialog .modal-content .modal-header h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .modal-dialog .modal-content {
+    padding: 50px 15px;
+  }
+
+  .thankyou_modal p br {
     display: none;
   }
 }
