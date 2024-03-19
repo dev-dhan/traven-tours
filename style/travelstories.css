@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#travel_stories {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  padding: 40px;
+}
+
+#travel_stories .title {
+  text-align: center;
+}
+
+#travel_stories .title h3 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#travel_stories .title h1 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+#travel_stories .cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#travel_stories .cards .card {
+  width: 390px;
+  height: 230px;
+  background-color: #c5d1ef;
+  border-radius: 18px;
+  padding: 20px;
+  margin: 20px;
+}
+
+#travel_stories .cards .card .content_1 h1 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#travel_stories .cards .card .content_1 p {
+  font-size: 12px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+#travel_stories .cards .card .content_2 {
+  display: flex;
+}
+
+#travel_stories .cards .card .content_2 .text {
+  padding: 10px 10px;
+}
+
+#travel_stories .cards .card .content_2 .text h4 {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#travel_stories .cards .card .content_2 .text p {
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: -1px;
+}
+
+#travel_stories .cards .card .content_2 img {
+  margin-top: 10px;
+  padding-right: 10px;
+  width: 70px;
+  height: 70px;
+}
+
+#travel_stories .button button {
+  width: 303px;
+  height: 52px;
+  background-color: #3d66cb;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  padding: 20px;
+}
+
+/*TABLE VIEW*/
+
+@media only screen and (max-width: 990px) {
+  #travel_stories .cards .card {
+    width: 300px;
+  }
+
+  #travel_stories .cards {
+    padding: 30px;
+  }
+}
+
+/*PHONE VIEW*/
+
+@media only screen and (max-width: 600px) {
+  #travel_stories {
+    padding: 10px;
+  }
+
+  #travel_stories .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #travel_stories .title h1 {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  #travel_stories .title h3 {
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  #travel_stories .button button {
+    width: 220px;
+    font-size: 12px;
+  }
+}
