@@ -30,7 +30,7 @@ html {
   color: var(--tertiary-color);
 }
 
-.modal .modal-content2 {
+.thankyou-modal .thankyou-content2 {
   background-color: var(--tertiary-color);
   max-width: 1440px;
   width: 75%;
@@ -38,7 +38,7 @@ html {
   margin: 0 auto;
 }
 
-.modal .modal-content2 .thankyou_modal {
+.thankyou-modal .thankyou-content2 .thankyou_modal {
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -48,35 +48,35 @@ html {
   padding: 20px;
 }
 
-.modal .modal-content2 .thankyou_modal img {
+.thankyou-modal .thankyou-content2 .thankyou_modal img {
   background-color: var(--primary-color);
   border-radius: 50%;
   padding: 15px;
 }
 
-.modal .modal-content2 .thankyou_modal h1 {
+.thankyou-modal .thankyou-content2 .thankyou_modal h1 {
   font-size: 35px;
   font-weight: 400;
 }
 
-.modal .modal-content2 .thankyou_modal h4 {
+.thankyou-modal .thankyou-content2 .thankyou_modal h4 {
   font-size: 16px;
   font-weight: 500;
 }
 
-.modal .modal-content2 .thankyou_modal h5 {
+.thankyou-modal .thankyou-content2 .thankyou_modal h5 {
   color: red;
   font-weight: 400;
   font-size: 14px;
 }
 
-.modal .modal-content2 .thankyou_modal p {
+.thankyou-modal .thankyou-content2 .thankyou_modal p {
   font-weight: 300px;
   font-size: 12px;
   margin: 4px;
 }
 
-.modal .modal-content2 .thankyou_modal button {
+.thankyou-modal .thankyou-content2 .thankyou_modal button {
   width: 75%;
   height: 52px;
   border: none;
@@ -88,7 +88,7 @@ html {
   margin-top: 50px;
 }
 
-.modal .modal-content2 .thankyou_modal button:hover {
+.thankyou-modal .thankyou-content2 .thankyou_modal button:hover {
   background-color: var(--third-color);
   color: var(--tertiary-color);
 }
@@ -96,7 +96,7 @@ html {
 /*Tablet View*/
 
 @media only screen and (max-width: 990px) {
-  .modal .modal-content2 .thankyou_modal h1 {
+  .thankyou-modal .thankyou-content2 .thankyou_modal h1 {
     font-size: 35px;
   }
 }
@@ -108,7 +108,7 @@ html {
     display: none;
   }
 
-  .modal .modal-content2 .thankyou_modal button {
+  .thankyou-modal .thankyou-content2 .thankyou_modal button {
     font-size: 14px;
   }
 }

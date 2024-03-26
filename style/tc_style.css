@@ -27,7 +27,7 @@ html {
   color: var(--tertiary-color);
 }
 
-.modal .modal-dialog .modal-content .close {
+.terms-modal .terms-dialog .terms-content .close {
   align-self: end;
   margin-top: -50px;
   width: 3%;
@@ -37,47 +37,47 @@ html {
   box-sizing: border-box;
 }
 
-.modal-dialog .modal-content {
+.terms-modal .terms-dialog .terms-content {
   max-width: 1440px;
   width: 200%;
   height: 100%;
   padding: 60px 30px;
 }
-.modal-dialog .modal-content .modal-header {
+.terms-dialog .terms-content .terms-header {
   align-self: center;
 }
 
-.modal-dialog .modal-content .modal-header h1 {
+.terms-modal .terms-dialog .terms-content .terms-header h1 {
   font-family: "Poppins", sans-serif;
   font-size: 50px;
   font-weight: 700;
 }
 
-.modal-dialog .modal-content .modal-body {
+.terms-modal .terms-dialog .terms-content .terms-body {
   padding: 20px 50px;
 }
 
-.modal-dialog .modal-content .modal-body .condition {
+.terms-modal .terms-dialog .terms-content .terms-body .condition {
   padding: 25px 20px;
 }
 
-.modal-dialog .modal-content .modal-body .condition h6 {
+.terms-modal .terms-dialog .terms-content .terms-body .condition h6 {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 16px;
 }
 
-.modal-dialog .modal-content .modal-body .condition p {
+.terms-modal .terms-dialog .terms-content .terms-body .condition p {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 14px;
 }
 
-.modal-dialog .modal-content .modal-footer {
+.terms-modal .terms-dialog .terms-content .terms-footer {
   align-self: center;
 }
 
-.modal-dialog .modal-content .modal-footer button {
+.terms-modal .terms-dialog .terms-content .terms-footer button {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -90,7 +90,7 @@ html {
   font-weight: 700;
 }
 
-.modal-dialog .modal-content .modal-footer button:hover {
+.terms-modal .terms-dialog .terms-content .terms-footer button:hover {
   background-color: var(--third-color);
   color: var(--tertiary-color);
 }
@@ -98,25 +98,25 @@ html {
 /*Tablet View*/
 
 @media only screen and (max-width: 990px) {
-  .modal {
+  .terms-modal {
     padding: 50px;
   }
 
-  .modal-dialog .modal-content {
+  .terms-modal .terms-dialog .terms-content {
     width: 130%;
     height: 100%;
     padding: 30px 15px;
   }
 
-  .modal-dialog .modal-content .modal-header h1 {
+  .terms-modal .terms-dialog .terms-content .terms-header h1 {
     font-size: 35px;
   }
 
-  .modal .modal-content2 .thankyou_modal h1 {
+  .terms-modal .modal-content2 .thankyou_modal h1 {
     font-size: 35px;
   }
 
-  .modal .modal-dialog .modal-content .close {
+  .terms-modal .terms-dialog .terms-content .close {
     margin-top: -20px;
     width: 6%;
     height: 5%;
@@ -126,33 +126,33 @@ html {
 /*Mobile View*/
 
 @media only screen and (max-width: 600px) {
-  .modal {
+  .terms-modal {
     padding: 10px;
   }
-  .modal-dialog .modal-content {
+  .terms-modal .terms-dialog .terms-content {
     width: 100%;
     height: 100%;
     padding: 15px 7px;
   }
 
-  .modal-dialog .modal-content .modal-body {
+  .terms-modal .terms-dialog .terms-content .terms-body {
     padding: 0;
   }
 
-  .modal-dialog .modal-content .modal-header h1 {
+  .terms-modal .terms-dialog .terms-content .terms-header h1 {
     font-size: 35px;
     text-align: center;
   }
 
-  .modal-dialog .modal-content {
+  .terms-modal .terms-dialog .terms-content {
     padding: 50px 15px;
   }
 
-  .thankyou_modal p br {
+  .terms-modal .thankyou_modal p br {
     display: none;
   }
 
-  .modal .modal-dialog .modal-content .close {
+  .terms-modal .terms-dialog .terms-content .close {
     margin-top: -40px;
     width: 8%;
     height: 5%;
